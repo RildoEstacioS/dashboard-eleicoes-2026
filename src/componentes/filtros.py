@@ -65,7 +65,7 @@ def barra_lateral() -> Contexto:
     # Só cargos com alguma disputa disponível nos dados, na ordem oficial do TSE.
     cargos = [c for c in cg.sort_values("CD_CARGO").DS_CARGO
               if c in CARGOS_HABILITADOS and ((disp.DS_CARGO == c) & (disp.ESTADO == voc.DISPONIVEL)).any()]
-    c = sb.columns([1, 2])
+    c = sb.columns([1.3, 2])  # largura mínima para o ano não ser cortado
     c[0].selectbox("Ano", [2026], key="f_ano", help="Inicialmente apenas 2026.")
     cargo = c[1].selectbox("Cargo", cargos, key="f_cargo")
     linha_cargo = cg[cg.DS_CARGO == cargo].iloc[0]

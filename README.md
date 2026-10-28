@@ -8,7 +8,35 @@ oficiais do TSE e malhas territoriais oficiais do IBGE.
 > votos no exterior (por país e cidade), exportação CSV e metodologia.
 > Ver [Funcionalidades](#funcionalidades).
 
+**Stack:** Python 3.11 · Streamlit · Plotly · DuckDB · Parquet · GeoPandas/Shapely
+
+![Visão geral: presidente, 1º turno, candidato mais votado por UF](docs/imagens/01_visao_geral_presidente.png)
+
+## Telas
+
+| | |
+|---|---|
+| ![Presidente no 2º turno, mais votado por município](docs/imagens/02_presidente_2turno_municipios.png) | ![1º × 2º turno: mesmo candidato nos dois turnos, na mesma escala](docs/imagens/03_primeiro_x_segundo_turno.png) |
+| **Brasil por município (5.571)**: mais votado no 2º turno de presidente | **1º × 2º turno**: mapas na mesma escala, variação em p.p. e KPIs |
+| ![Participação: abstenção por município](docs/imagens/04_participacao.png) | ![Governador: partido mais votado por UF e eleitos por partido](docs/imagens/05_governador_brasil.png) |
+| **Participação**: indicador no mapa, com fórmula, denominador e rankings | **Governador**: 27 disputas estaduais, partido mais votado e eleitos oficiais |
+| ![Deputado federal em SP: partido mais votado por município](docs/imagens/06_deputado_federal_sp.png) | ![Votos no exterior agrupados por país](docs/imagens/07_votos_no_exterior.png) |
+| **Deputado federal (SP)**: votos por partido nos 645 municípios | **Exterior**: mais votado por país, com tabela por país e por cidade |
+| ![Dados e metodologia: fontes oficiais com hash e datas](docs/imagens/08_dados_e_metodologia.png) | |
+| **Dados e metodologia**: fontes, dicionário, regras, qualidade e downloads | |
+
+Prints gerados por `python -m scripts.capturar_telas` (dados oficiais reais; requer os dados
+preparados e o Microsoft Edge ou o Google Chrome instalado).
+
 ## Executar o dashboard
+
+**Jeito mais fácil (Windows):** dê dois cliques em **`Abrir Dashboard.bat`**, na pasta do
+projeto. Na primeira vez, ele cria o ambiente Python, instala as dependências e (com a sua
+confirmação) baixa e prepara os dados oficiais (~690 MB, 10–20 min). Depois disso, abre
+direto no navegador. Para encerrar, feche a janela preta. Dica: clique com o botão direito
+no arquivo → *Enviar para* → *Área de trabalho (criar atalho)*.
+
+Pelo terminal (venv ativo):
 
 ```powershell
 streamlit run app.py
