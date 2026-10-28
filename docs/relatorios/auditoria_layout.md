@@ -1,0 +1,645 @@
+# Auditoria de layout — arquivos brutos do TSE
+
+Gerado em 2026-10-28T02:25:45-03:00 por `python -m scripts.preparar_dados auditar`.
+
+## detalhe_munzona — Detalhe da apuração por município e zona
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip
+- Membro lido: `detalhe_votacao_munzona_2026_BRASIL.csv`
+- Linhas: 37,521
+- Geração informada pela fonte: [('27/10/2026', '19:32:04', 37521)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 37521, 'soma_demais': 37521, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| detalhe_votacao_munzona_2026_AC.csv | 115 |
+| detalhe_votacao_munzona_2026_AL.csv | 428 |
+| detalhe_votacao_munzona_2026_AM.csv | 370 |
+| detalhe_votacao_munzona_2026_AP.csv | 72 |
+| detalhe_votacao_munzona_2026_BA.csv | 1800 |
+| detalhe_votacao_munzona_2026_BR.csv | 12584 |
+| detalhe_votacao_munzona_2026_BRASIL.csv | 37521 |
+| detalhe_votacao_munzona_2026_CE.csv | 820 |
+| detalhe_votacao_munzona_2026_DF.csv | 95 |
+| detalhe_votacao_munzona_2026_ES.csv | 425 |
+| detalhe_votacao_munzona_2026_GO.csv | 1036 |
+| detalhe_votacao_munzona_2026_MA.csv | 892 |
+| detalhe_votacao_munzona_2026_MG.csv | 3592 |
+| detalhe_votacao_munzona_2026_MS.csv | 352 |
+| detalhe_votacao_munzona_2026_MT.csv | 588 |
+| detalhe_votacao_munzona_2026_PA.csv | 640 |
+| detalhe_votacao_munzona_2026_PB.csv | 920 |
+| detalhe_votacao_munzona_2026_PE.csv | 836 |
+| detalhe_votacao_munzona_2026_PI.csv | 920 |
+| detalhe_votacao_munzona_2026_PR.csv | 1684 |
+| detalhe_votacao_munzona_2026_RJ.csv | 732 |
+| detalhe_votacao_munzona_2026_RN.csv | 860 |
+| detalhe_votacao_munzona_2026_RO.csv | 224 |
+| detalhe_votacao_munzona_2026_RR.csv | 64 |
+| detalhe_votacao_munzona_2026_RS.csv | 2088 |
+| detalhe_votacao_munzona_2026_SC.csv | 1260 |
+| detalhe_votacao_munzona_2026_SE.csv | 308 |
+| detalhe_votacao_munzona_2026_SP.csv | 3116 |
+| detalhe_votacao_munzona_2026_TO.csv | 700 |
+
+</details>
+
+**Distribuição**
+
+| NR_TURNO | DS_CARGO | TP_ABRANGENCIA | linhas | n_uf |
+|---|---|---|---|---|
+| 1 | Deputado Distrital | E | 19 | 1 |
+| 1 | Deputado Estadual | E | 6087 | 26 |
+| 1 | Deputado Federal | E | 6106 | 27 |
+| 1 | Governador | E | 6106 | 27 |
+| 1 | Presidente | F | 6292 | 28 |
+| 1 | Senador | E | 6106 | 27 |
+| 2 | Governador | E | 513 | 6 |
+| 2 | Presidente | F | 6292 | 28 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=37521 |
+| `HH_GERACAO` | 19:32:04=37521 |
+| `ANO_ELEICAO` | 2026=37521 |
+| `CD_TIPO_ELEICAO` | 2=37521 |
+| `NM_TIPO_ELEICAO` | Eleição Ordinária=37521 |
+| `NR_TURNO` | 1=30716; 2=6805 |
+| `CD_ELEICAO` | 6259=24424; 6258=6292; 6257=6292; 6260=513 |
+| `DS_ELEICAO` | Eleições Gerais Estaduais 2026=24937; Eleição Geral Federal 2026=12584 |
+| `DT_ELEICAO` | 04/10/2026=30716; 25/10/2026=6805 |
+| `TP_ABRANGENCIA` | E=24937; F=12584 |
+| `SG_UF` | MG=5388; SP=4674; RS=3132; BA=2700; PR=2526; SC=1890; GO=1554; PB=1380; PI=1380; MA=1338; PE=1254; CE=1230; RN=1204; RJ=1098; TO=980; PA=960; MT=882; AL=642; ES=595; MS=528; AM=518; SE=462; ZZ=372; RO=336; AC=161; DF=133; AP=108; RR=96 |
+| `SG_UE` | BR=12584; MG=3592; SP=3116; RS=2088; BA=1800; PR=1684; SC=1260; GO=1036; PB=920; PI=920; MA=892; RN=860; PE=836; CE=820; RJ=732; TO=700; PA=640; MT=588; AL=428; ES=425; AM=370; MS=352; SE=308; RO=224; AC=115; DF=95; AP=72; RR=64 |
+| `NM_UE` | BRASIL=12584; MINAS GERAIS=3592; SÃO PAULO=3116; RIO GRANDE DO SUL=2088; BAHIA=1800; PARANÁ=1684; SANTA CATARINA=1260; GOIÁS=1036; PIAUÍ=920; PARAÍBA=920; MARANHÃO=892; RIO GRANDE DO NORTE=860; PERNAMBUCO=836; CEARÁ=820; RIO DE JANEIRO=732; TOCANTINS=700; PARÁ=640; MATO GROSSO=588; ALAGOAS=428; ESPÍRITO SANTO=425; AMAZONAS=370; MATO GROSSO DO SUL=352; SERGIPE=308; RONDÔNIA=224; ACRE=115; DISTRITO FEDERAL=95; AMAPÁ=72; RORAIMA=64 |
+| `CD_MUNICIPIO` | 5757 valores distintos |
+| `NM_MUNICIPIO` | 5471 valores distintos |
+| `NR_ZONA` | 421 valores distintos |
+| `CD_CARGO` | 1=12584; 3=6619; 5=6106; 6=6106; 7=6087; 8=19 |
+| `DS_CARGO` | Presidente=12584; Governador=6619; Senador=6106; Deputado Federal=6106; Deputado Estadual=6087; Deputado Distrital=19 |
+| `QT_APTOS` | 11071 valores distintos |
+| `QT_SECOES_PRINCIPAIS` | 469 valores distintos |
+| `QT_SECOES_AGREGADAS` | 65 valores distintos |
+| `QT_SECOES_NAO_INSTALADAS` | 0=37441; 1=78; 2=2 |
+| `QT_TOTAL_SECOES` | 474 valores distintos |
+| `QT_COMPARECIMENTO` | 11713 valores distintos |
+| `QT_ELEITORES_SECOES_NAO_INSTALADAS` | 0=37441; 1=10; 5=8; 13=6; 6=6; 18=6; 7=6; 10=6; 27=4; 3=4; 8=4; 19=2; 11=2; 12=2; 2=2; 22=2; 17=2; 9=2; 14=2; 29=2; 25=2 |
+| `QT_ABSTENCOES` | 7542 valores distintos |
+| `ST_VOTO_EM_TRANSITO` | N=37521 |
+| `QT_VOTOS` | 15880 valores distintos |
+| `QT_VOTOS_CONCORRENTES` | 22099 valores distintos |
+| `QT_TOTAL_VOTOS_VALIDOS` | 22045 valores distintos |
+| `QT_VOTOS_NOMINAIS_VALIDOS` | 21903 valores distintos |
+| `QT_TOTAL_VOTOS_LEG_VALIDOS` | 2989 valores distintos |
+| `QT_VOTOS_LEG_VALIDOS` | 2989 valores distintos |
+| `QT_VOTOS_NOM_CONVR_LEG_VALIDOS` | 0=37521 |
+| `QT_TOTAL_VOTOS_ANULADOS` | 184 valores distintos |
+| `QT_VOTOS_NOMINAIS_ANULADOS` | 179 valores distintos |
+| `QT_VOTOS_LEGENDA_ANULADOS` | 0=36736; 1=372; 2=141; 3=87; 4=46; 5=40; 6=29; 7=18; 8=14; 10=11; 9=5; 13=4; 11=4; 24=4; 12=3; 26=2; 15=2; 28=1; 17=1; 16=1 |
+| `QT_TOTAL_VOTOS_ANUL_SUBJUD` | 855 valores distintos |
+| `QT_VOTOS_NOMINAIS_ANUL_SUBJUD` | 851 valores distintos |
+| `QT_VOTOS_LEGENDA_ANUL_SUBJUD` | 49 valores distintos |
+| `QT_VOTOS_BRANCOS` | 5584 valores distintos |
+| `QT_TOTAL_VOTOS_NULOS` | 5903 valores distintos |
+| `QT_VOTOS_NULOS` | 5849 valores distintos |
+| `QT_VOTOS_NULOS_TECNICOS` | 651 valores distintos |
+| `QT_VOTOS_ANULADOS_APU_SEP` | 0=37521 |
+| `HH_ULTIMA_TOTALIZACAO` | 8271 valores distintos |
+| `DT_ULTIMA_TOTALIZACAO` | 04/10/2026=21284; 25/10/2026=6805; 15/10/2026=3630; 24/10/2026=2154; 22/10/2026=1380; 16/10/2026=1044; 10/10/2026=880; 21/10/2026=176; 23/10/2026=112; 19/10/2026=36; 05/10/2026=20 |
+
+## votacao_candidato_munzona — Votação nominal por município e zona
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip
+- Membro lido: `votacao_candidato_munzona_2026_BRASIL.csv`
+- Linhas: 6,748,427
+- Geração informada pela fonte: [('27/10/2026', '19:32:16', 6748427)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 6748427, 'soma_demais': 6748427, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| votacao_candidato_munzona_2026_AC.csv | 7475 |
+| votacao_candidato_munzona_2026_AL.csv | 25038 |
+| votacao_candidato_munzona_2026_AM.csv | 31820 |
+| votacao_candidato_munzona_2026_AP.csv | 5058 |
+| votacao_candidato_munzona_2026_BA.csv | 508500 |
+| votacao_candidato_munzona_2026_BR.csv | 88088 |
+| votacao_candidato_munzona_2026_BRASIL.csv | 6748427 |
+| votacao_candidato_munzona_2026_CE.csv | 129560 |
+| votacao_candidato_munzona_2026_DF.csv | 11419 |
+| votacao_candidato_munzona_2026_ES.csv | 45985 |
+| votacao_candidato_munzona_2026_GO.csv | 212380 |
+| votacao_candidato_munzona_2026_MA.csv | 123988 |
+| votacao_candidato_munzona_2026_MG.csv | 1508640 |
+| votacao_candidato_munzona_2026_MS.csv | 32824 |
+| votacao_candidato_munzona_2026_MT.csv | 58800 |
+| votacao_candidato_munzona_2026_PA.csv | 105760 |
+| votacao_candidato_munzona_2026_PB.csv | 86020 |
+| votacao_candidato_munzona_2026_PE.csv | 180576 |
+| votacao_candidato_munzona_2026_PI.csv | 74290 |
+| votacao_candidato_munzona_2026_PR.csv | 426052 |
+| votacao_candidato_munzona_2026_RJ.csv | 351909 |
+| votacao_candidato_munzona_2026_RN.csv | 46096 |
+| votacao_candidato_munzona_2026_RO.csv | 21784 |
+| votacao_candidato_munzona_2026_RR.csv | 5504 |
+| votacao_candidato_munzona_2026_RS.csv | 513126 |
+| votacao_candidato_munzona_2026_SC.csv | 202545 |
+| votacao_candidato_munzona_2026_SE.csv | 26719 |
+| votacao_candidato_munzona_2026_SP.csv | 1876611 |
+| votacao_candidato_munzona_2026_TO.csv | 41860 |
+
+</details>
+
+**Distribuição**
+
+| NR_TURNO | DS_CARGO | TP_ABRANGENCIA | linhas | n_uf |
+|---|---|---|---|---|
+| 1 | Deputado Distrital | E | 7885 | 1 |
+| 1 | Deputado Estadual | E | 3767169 | 26 |
+| 1 | Deputado Federal | E | 2765548 | 27 |
+| 1 | Governador | E | 44473 | 27 |
+| 1 | Presidente | F | 75504 | 28 |
+| 1 | Senador | E | 74238 | 27 |
+| 2 | Governador | E | 1026 | 6 |
+| 2 | Presidente | F | 12584 | 28 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=6748427 |
+| `HH_GERACAO` | 19:32:16=6748427 |
+| `ANO_ELEICAO` | 2026=6748427 |
+| `CD_TIPO_ELEICAO` | 2=6748427 |
+| `NM_TIPO_ELEICAO` | Eleição Ordinária=6748427 |
+| `NR_TURNO` | 1=6734817; 2=13610 |
+| `CD_ELEICAO` | 6259=6659313; 6257=75504; 6258=12584; 6260=1026 |
+| `DS_ELEICAO` | ELEIÇÕES GERAIS ESTADUAIS 2026=6660339; ELEIÇÃO GERAL FEDERAL 2026=88088 |
+| `DT_ELEICAO` | 04/10/2026=6734817; 25/10/2026=13610 |
+| `TP_ABRANGENCIA` | E=6660339; F=88088 |
+| `SG_UF` | SP=1887517; MG=1521212; RS=520434; BA=514800; PR=431946; RJ=354471; GO=216006; SC=206955; PE=183502; CE=132430; MA=127110; PA=108000; PB=89240; PI=77510; MT=60858; RN=48504; ES=47175; TO=43820; MS=34056; AM=32856; SE=27797; AL=26536; RO=22568; DF=11685; AC=7797; RR=5728; AP=5310; ZZ=2604 |
+| `SG_UE` | SP=1876611; MG=1508640; RS=513126; BA=508500; PR=426052; RJ=351909; GO=212380; SC=202545; PE=180576; CE=129560; MA=123988; PA=105760; BR=88088; PB=86020; PI=74290; MT=58800; RN=46096; ES=45985; TO=41860; MS=32824; AM=31820; SE=26719; AL=25038; RO=21784; DF=11419; AC=7475; RR=5504; AP=5058 |
+| `NM_UE` | SÃO PAULO=1876611; MINAS GERAIS=1508640; RIO GRANDE DO SUL=513126; BAHIA=508500; PARANÁ=426052; RIO DE JANEIRO=351909; GOIÁS=212380; SANTA CATARINA=202545; PERNAMBUCO=180576; CEARÁ=129560; MARANHÃO=123988; PARÁ=105760; BRASIL=88088; PARAÍBA=86020; PIAUÍ=74290; MATO GROSSO=58800; RIO GRANDE DO NORTE=46096; ESPÍRITO SANTO=45985; TOCANTINS=41860; MATO GROSSO DO SUL=32824; AMAZONAS=31820; SERGIPE=26719; ALAGOAS=25038; RONDÔNIA=21784; DISTRITO FEDERAL=11419; ACRE=7475; RORAIMA=5504; AMAPÁ=5058 |
+| `CD_MUNICIPIO` | 5757 valores distintos |
+| `NM_MUNICIPIO` | 5471 valores distintos |
+| `NR_ZONA` | 421 valores distintos |
+| `CD_CARGO` | 7=3767169; 6=2765548; 1=88088; 5=74238; 3=45499; 8=7885 |
+| `DS_CARGO` | Deputado Estadual=3767169; Deputado Federal=2765548; Presidente=88088; Senador=74238; Governador=45499; Deputado Distrital=7885 |
+| `SQ_CANDIDATO` | 18842 valores distintos |
+| `NR_CANDIDATO` | 5385 valores distintos |
+| `NM_CANDIDATO` | 18808 valores distintos |
+| `NM_URNA_CANDIDATO` | 18496 valores distintos |
+| `NM_SOCIAL_CANDIDATO` | 54 valores distintos |
+| `CD_SITUACAO_CANDIDATURA` | -3=6748427 |
+| `DS_SITUACAO_CANDIDATURA` | #NE=6748427 |
+| `CD_DETALHE_SITUACAO_CAND` | -3=6748427 |
+| `DS_DETALHE_SITUACAO_CAND` | #NE=6748427 |
+| `CD_SITUACAO_JULGAMENTO` | 2=6531688; 4=166423; 14=26708; 16=21493; 17=1336; 20=779 |
+| `DS_SITUACAO_JULGAMENTO` | DEFERIDO=6531688; INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO=166423; INDEFERIDO=26708; DEFERIDO COM RECURSO=21493; PENDENTE DE JULGAMENTO=1336; PEDIDO NÃO CONHECIDO EM PRAZO RECURSAL OU COM RECURSO=779 |
+| `CD_SITUACAO_CASSACAO` | -1=6748427 |
+| `DS_SITUACAO_CASSACAO` | #NULO=6748427 |
+| `CD_SITUACAO_DCONST_DIPLOMA` | -1=6748427 |
+| `DS_SITUACAO_DCONST_DIPLOMA` | #NULO=6748427 |
+| `TP_AGREMIACAO` | PARTIDO ISOLADO=4652868; FEDERAÇÃO=2030449; COLIGAÇÃO=65110 |
+| `NR_PARTIDO` | 22=530593; 30=450571; 15=446306; 20=415687; 10=387010; 12=382573; 55=375956; 13=372219; 45=350082; 40=343861; 70=336473; 44=257669; 50=248566; 11=232359; 14=210712; 27=206313; 33=200702; 25=178058; 36=161009; 77=153426; 35=109614; 18=109441; 43=64489; 23=55989; 80=45225; 65=39817; 16=35861; 29=34979; 21=12357; 28=510 |
+| `SG_PARTIDO` | PL=530593; NOVO=450571; MDB=446306; PODE=415687; REPUBLICANOS=387010; PDT=382573; PSD=375956; PT=372219; PSDB=350082; PSB=343861; AVANTE=336473; UNIÃO=257669; PSOL=248566; PP=232359; MISSÃO=210712; DC=206313; MOBILIZA=200702; PRD=178058; AGIR=161009; SOLIDARIEDADE=153426; DEMOCRATA=109614; REDE=109441; PV=64489; CIDADANIA=55989; UP=45225; PCDOB=39817; PSTU=35861; PCO=34979; PCB=12357; PRTB=510 |
+| `NM_PARTIDO` | PARTIDO LIBERAL=530593; PARTIDO NOVO=450571; MOVIMENTO DEMOCRÁTICO BRASILEIRO=446306; PODEMOS=415687; REPUBLICANOS=387010; PARTIDO DEMOCRÁTICO TRABALHISTA=382573; PARTIDO SOCIAL DEMOCRÁTICO=375956; PARTIDO DOS TRABALHADORES=372219; PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA=350082; PARTIDO SOCIALISTA BRASILEIRO=343861; AVANTE=336473; UNIÃO BRASIL=257669; PARTIDO SOCIALISMO E LIBERDADE=248566; PROGRESSISTAS=232359; PARTIDO MISSÃO=210712; DEMOCRACIA CRISTÃ=206313; MOBILIZAÇÃO NACIONAL=200702; PARTIDO RENOVACAO DEMOCRATICA=178058; AGIR=161009; SOLIDARIEDADE=153426; DEMOCRATA=109614; REDE SUSTENTABILIDADE=109441; PARTIDO VERDE=64489; CIDADANIA=55989; UNIDADE POPULAR=45225; PARTIDO COMUNISTA DO BRASIL=39817; PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO=35861; PARTIDO DA CAUSA OPERÁRIA=34979; PARTIDO COMUNISTA BRASILEIRO=12357; PARTIDO RENOVADOR TRABALHISTA BRASILEIRO=510 |
+| `NR_FEDERACAO` | -1=4686312; 104=490028; 101=476525; 100=406071; 102=358007; 103=331484 |
+| `NM_FEDERACAO` | #NULO=4686312; FEDERAÇÃO UNIÃO PROGRESSISTA=490028; FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL=476525; FEDERAÇÃO PSDB CIDADANIA=406071; FEDERAÇÃO PSOL REDE=358007; FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA=331484 |
+| `SG_FEDERACAO` | #NULO=4686312; UNIÃO/PP=489674; PT/PC do B/PV=470042; PSDB/CIDADANIA=405931; PSOL/REDE=358007; PRD/SOLIDARIEDADE=331484; 13-PT/65-PC do B/43-PV=6483; 44-UNIÃO/11-PP=354; 45-PSDB/23-CIDADANIA=140 |
+| `DS_COMPOSICAO_FEDERACAO` | #NULO=4686312; PP / UNIÃO=490028; PCDOB / PT / PV=476525; CIDADANIA / PSDB=406071; PSOL / REDE=358007; PRD / SOLIDARIEDADE=331484 |
+| `SQ_COLIGACAO` | 1260 valores distintos |
+| `NM_COLIGACAO` | 97 valores distintos |
+| `DS_COMPOSICAO_COLIGACAO` | 134 valores distintos |
+| `ST_VOTO_EM_TRANSITO` | N=6748427 |
+| `QT_VOTOS_NOMINAIS` | 22369 valores distintos |
+| `NM_TIPO_DESTINACAO_VOTOS` | Válido=6553200; Anulado sub judice=168519; Anulado=26620; Válido (legenda)=88 |
+| `QT_VOTOS_NOMINAIS_VALIDOS` | 22361 valores distintos |
+| `CD_SIT_TOT_TURNO` | 5=4304339; 4=1875208; 2=452220; 3=78440; 1=24610; 6=13610 |
+| `DS_SIT_TOT_TURNO` | SUPLENTE=4304339; NÃO ELEITO=1875208; ELEITO POR QP=452220; ELEITO POR MÉDIA=78440; ELEITO=24610; 2º TURNO=13610 |
+
+## votacao_partido_munzona — Votação em partido por município e zona
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip
+- Membro lido: `votacao_partido_munzona_2026_BRASIL.csv`
+- Linhas: 482,360
+- Geração informada pela fonte: [('27/10/2026', '19:32:16', 482360)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 482360, 'soma_demais': 482360, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| votacao_partido_munzona_2026_AC.csv | 1265 |
+| votacao_partido_munzona_2026_AL.csv | 4708 |
+| votacao_partido_munzona_2026_AM.csv | 4218 |
+| votacao_partido_munzona_2026_AP.csv | 792 |
+| votacao_partido_munzona_2026_BA.csv | 27900 |
+| votacao_partido_munzona_2026_BR.csv | 88088 |
+| votacao_partido_munzona_2026_BRASIL.csv | 482360 |
+| votacao_partido_munzona_2026_CE.csv | 12915 |
+| votacao_partido_munzona_2026_DF.csv | 1406 |
+| votacao_partido_munzona_2026_ES.csv | 5100 |
+| votacao_partido_munzona_2026_GO.csv | 15799 |
+| votacao_partido_munzona_2026_MA.csv | 13826 |
+| votacao_partido_munzona_2026_MG.csv | 70044 |
+| votacao_partido_munzona_2026_MS.csv | 4928 |
+| votacao_partido_munzona_2026_MT.csv | 8085 |
+| votacao_partido_munzona_2026_PA.csv | 10400 |
+| votacao_partido_munzona_2026_PB.csv | 11040 |
+| votacao_partido_munzona_2026_PE.csv | 13376 |
+| votacao_partido_munzona_2026_PI.csv | 14030 |
+| votacao_partido_munzona_2026_PR.csv | 26944 |
+| votacao_partido_munzona_2026_RJ.csv | 13725 |
+| votacao_partido_munzona_2026_RN.csv | 9460 |
+| votacao_partido_munzona_2026_RO.csv | 3024 |
+| votacao_partido_munzona_2026_RR.csv | 816 |
+| votacao_partido_munzona_2026_RS.csv | 33930 |
+| votacao_partido_munzona_2026_SC.csv | 20475 |
+| votacao_partido_munzona_2026_SE.csv | 3696 |
+| votacao_partido_munzona_2026_SP.csv | 54530 |
+| votacao_partido_munzona_2026_TO.csv | 7840 |
+
+</details>
+
+**Distribuição**
+
+| NR_TURNO | DS_CARGO | TP_ABRANGENCIA | linhas | n_uf |
+|---|---|---|---|---|
+| 1 | Deputado Distrital | E | 475 | 1 |
+| 1 | Deputado Estadual | E | 136688 | 26 |
+| 1 | Deputado Federal | E | 148228 | 27 |
+| 1 | Governador | E | 44473 | 27 |
+| 1 | Presidente | F | 75504 | 28 |
+| 1 | Senador | E | 63382 | 27 |
+| 2 | Governador | E | 1026 | 6 |
+| 2 | Presidente | F | 12584 | 28 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=482360 |
+| `HH_GERACAO` | 19:32:16=482360 |
+| `ANO_ELEICAO` | 2026=482360 |
+| `CD_TIPO_ELEICAO` | 2=482360 |
+| `NM_TIPO_ELEICAO` | Eleição Ordinária=482360 |
+| `NR_TURNO` | 1=468750; 2=13610 |
+| `CD_ELEICAO` | 6259=393246; 6257=75504; 6258=12584; 6260=1026 |
+| `DS_ELEICAO` | Eleições Gerais Estaduais 2026=394272; Eleição Geral Federal 2026=88088 |
+| `DT_ELEICAO` | 04/10/2026=468750; 25/10/2026=13610 |
+| `TP_ABRANGENCIA` | E=394272; F=88088 |
+| `SG_UF` | MG=82616; SP=65436; RS=41238; BA=34200; PR=32838; SC=24885; GO=19425; PI=17250; MA=16948; PE=16302; RJ=16287; CE=15785; PB=14260; PA=12640; RN=11868; MT=10143; TO=9800; ES=6290; AL=6206; MS=6160; AM=5254; SE=4774; RO=3808; ZZ=2604; DF=1672; AC=1587; AP=1044; RR=1040 |
+| `SG_UE` | BR=88088; MG=70044; SP=54530; RS=33930; BA=27900; PR=26944; SC=20475; GO=15799; PI=14030; MA=13826; RJ=13725; PE=13376; CE=12915; PB=11040; PA=10400; RN=9460; MT=8085; TO=7840; ES=5100; MS=4928; AL=4708; AM=4218; SE=3696; RO=3024; DF=1406; AC=1265; RR=816; AP=792 |
+| `NM_UE` | BRASIL=88088; MINAS GERAIS=70044; SÃO PAULO=54530; RIO GRANDE DO SUL=33930; BAHIA=27900; PARANÁ=26944; SANTA CATARINA=20475; GOIÁS=15799; PIAUÍ=14030; MARANHÃO=13826; RIO DE JANEIRO=13725; PERNAMBUCO=13376; CEARÁ=12915; PARAÍBA=11040; PARÁ=10400; RIO GRANDE DO NORTE=9460; MATO GROSSO=8085; TOCANTINS=7840; ESPÍRITO SANTO=5100; MATO GROSSO DO SUL=4928; ALAGOAS=4708; AMAZONAS=4218; SERGIPE=3696; RONDÔNIA=3024; DISTRITO FEDERAL=1406; ACRE=1265; RORAIMA=816; AMAPÁ=792 |
+| `CD_MUNICIPIO` | 5757 valores distintos |
+| `NM_MUNICIPIO` | 5471 valores distintos |
+| `NR_ZONA` | 421 valores distintos |
+| `CD_CARGO` | 6=148228; 7=136688; 1=88088; 5=63382; 3=45499; 8=475 |
+| `DS_CARGO` | Deputado Federal=148228; Deputado Estadual=136688; Presidente=88088; Senador=63382; Governador=45499; Deputado Distrital=475 |
+| `TP_AGREMIACAO` | Partido isolado=282978; Federação=136371; Coligação=63011 |
+| `NR_PARTIDO` | 22=34144; 13=32350; 80=27245; 55=23441; 30=21389; 16=21326; 14=20975; 29=19778; 27=19027; 15=17564; 70=17441; 50=17310; 11=15831; 10=15311; 44=14702; 45=14632; 35=14153; 12=13736; 18=13699; 40=12444; 23=12422; 43=12284; 65=12212; 20=11957; 25=11295; 77=10429; 21=10338; 33=7638; 36=6777; 28=510 |
+| `SG_PARTIDO` | PL=34144; PT=32350; UP=27245; PSD=23441; NOVO=21389; PSTU=21326; MISSÃO=20975; PCO=19778; DC=19027; MDB=17564; AVANTE=17441; PSOL=17310; PP=15831; REPUBLICANOS=15311; UNIÃO=14702; PSDB=14632; DEMOCRATA=14153; PDT=13736; REDE=13699; PSB=12444; CIDADANIA=12422; PV=12284; PCDOB=12212; PODE=11957; PRD=11295; SOLIDARIEDADE=10429; PCB=10338; MOBILIZA=7638; AGIR=6777; PRTB=510 |
+| `NM_PARTIDO` | PARTIDO LIBERAL=34144; PARTIDO DOS TRABALHADORES=32350; UNIDADE POPULAR=27245; PARTIDO SOCIAL DEMOCRÁTICO=23441; PARTIDO NOVO=21389; PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO=21326; PARTIDO MISSÃO=20975; PARTIDO DA CAUSA OPERÁRIA=19778; DEMOCRACIA CRISTÃ=19027; MOVIMENTO DEMOCRÁTICO BRASILEIRO=17564; AVANTE=17441; PARTIDO SOCIALISMO E LIBERDADE=17310; PROGRESSISTAS=15831; REPUBLICANOS=15311; UNIÃO BRASIL=14702; PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA=14632; DEMOCRATA=14153; PARTIDO DEMOCRÁTICO TRABALHISTA=13736; REDE SUSTENTABILIDADE=13699; PARTIDO SOCIALISTA BRASILEIRO=12444; CIDADANIA=12422; PARTIDO VERDE=12284; PARTIDO COMUNISTA DO BRASIL=12212; PODEMOS=11957; PARTIDO RENOVACAO DEMOCRATICA=11295; SOLIDARIEDADE=10429; PARTIDO COMUNISTA BRASILEIRO=10338; MOBILIZAÇÃO NACIONAL=7638; AGIR=6777; PARTIDO RENOVADOR TRABALHISTA BRASILEIRO=510 |
+| `NR_FEDERACAO` | -1=315194; 101=56846; 102=31009; 104=30533; 100=27054; 103=21724 |
+| `NM_FEDERACAO` | #NULO=315194; FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL=56846; FEDERAÇÃO PSOL REDE=31009; FEDERAÇÃO UNIÃO PROGRESSISTA=30533; FEDERAÇÃO PSDB CIDADANIA=27054; FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA=21724 |
+| `SG_FEDERACAO` | #NULO=315194; PT/PC do B/PV=50363; PSOL/REDE=31009; UNIÃO/PP=30179; PSDB/CIDADANIA=26914; PRD/SOLIDARIEDADE=21724; 13-PT/65-PC do B/43-PV=6483; 44-UNIÃO/11-PP=354; 45-PSDB/23-CIDADANIA=140 |
+| `DS_COMPOSICAO_FEDERACAO` | #NULO=315194; PCDOB / PT / PV=56846; PSOL / REDE=31009; PP / UNIÃO=30533; CIDADANIA / PSDB=27054; PRD / SOLIDARIEDADE=21724 |
+| `SQ_COLIGACAO` | 1267 valores distintos |
+| `NM_COLIGACAO` | 97 valores distintos |
+| `DS_COMPOSICAO_COLIGACAO` | 134 valores distintos |
+| `ST_VOTO_EM_TRANSITO` | N=482360 |
+| `QT_VOTOS_LEGENDA_VALIDOS` | 1665 valores distintos |
+| `QT_VOTOS_NOM_CONVR_LEG_VALIDOS` | 78 valores distintos |
+| `QT_TOTAL_VOTOS_LEG_VALIDOS` | 1665 valores distintos |
+| `QT_VOTOS_NOMINAIS_VALIDOS` | 23665 valores distintos |
+| `QT_VOTOS_LEGENDA_ANUL_SUBJUD` | 43 valores distintos |
+| `QT_VOTOS_NOMINAIS_ANUL_SUBJUD` | 841 valores distintos |
+| `QT_VOTOS_LEGENDA_ANULADOS` | 0=481512; 1=422; 2=151; 3=91; 4=51; 5=36; 6=30; 7=18; 8=16; 10=7; 9=5; 13=4; 11=4; 12=4; 17=2; 22=1; 18=1; 14=1; 16=1; 20=1; 15=1; 24=1 |
+| `QT_VOTOS_NOMINAIS_ANULADOS` | 181 valores distintos |
+
+## consulta_cand — Candidatos
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip
+- Membro lido: `consulta_cand_2026_BRASIL.csv`
+- Linhas: 21,017
+- Geração informada pela fonte: [('27/10/2026', '19:30:36', 21017)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 21017, 'soma_demais': 21017, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| consulta_cand_2026_AC.csv | 392 |
+| consulta_cand_2026_AL.csv | 299 |
+| consulta_cand_2026_AM.csv | 479 |
+| consulta_cand_2026_AP.csv | 322 |
+| consulta_cand_2026_BA.csv | 1224 |
+| consulta_cand_2026_BR.csv | 32 |
+| consulta_cand_2026_BRASIL.csv | 21017 |
+| consulta_cand_2026_CE.csv | 714 |
+| consulta_cand_2026_DF.csv | 672 |
+| consulta_cand_2026_ES.csv | 595 |
+| consulta_cand_2026_GO.csv | 906 |
+| consulta_cand_2026_MA.csv | 619 |
+| consulta_cand_2026_MG.csv | 1832 |
+| consulta_cand_2026_MS.csv | 425 |
+| consulta_cand_2026_MT.csv | 455 |
+| consulta_cand_2026_PA.csv | 741 |
+| consulta_cand_2026_PB.csv | 450 |
+| consulta_cand_2026_PE.csv | 961 |
+| consulta_cand_2026_PI.csv | 402 |
+| consulta_cand_2026_PR.csv | 1090 |
+| consulta_cand_2026_RJ.csv | 2055 |
+| consulta_cand_2026_RN.csv | 334 |
+| consulta_cand_2026_RO.csv | 438 |
+| consulta_cand_2026_RR.csv | 413 |
+| consulta_cand_2026_RS.csv | 1054 |
+| consulta_cand_2026_SC.csv | 700 |
+| consulta_cand_2026_SE.csv | 411 |
+| consulta_cand_2026_SP.csv | 2630 |
+| consulta_cand_2026_TO.csv | 372 |
+
+</details>
+
+**Distribuição**
+
+| NR_TURNO | DS_CARGO | TP_ABRANGENCIA | linhas | n_uf |
+|---|---|---|---|---|
+| 1 | 1º SUPLENTE | ESTADUAL | 349 | 27 |
+| 1 | 2º SUPLENTE | ESTADUAL | 350 | 27 |
+| 1 | DEPUTADO DISTRITAL | ESTADUAL | 433 | 1 |
+| 1 | DEPUTADO ESTADUAL | ESTADUAL | 11295 | 26 |
+| 1 | DEPUTADO FEDERAL | ESTADUAL | 7803 | 27 |
+| 1 | GOVERNADOR | ESTADUAL | 201 | 27 |
+| 1 | PRESIDENTE | FEDERAL | 14 | 1 |
+| 1 | SENADOR | ESTADUAL | 319 | 27 |
+| 1 | VICE-GOVERNADOR | ESTADUAL | 211 | 27 |
+| 1 | VICE-PRESIDENTE | FEDERAL | 14 | 1 |
+| 2 | GOVERNADOR | ESTADUAL | 12 | 6 |
+| 2 | PRESIDENTE | FEDERAL | 2 | 1 |
+| 2 | VICE-GOVERNADOR | ESTADUAL | 12 | 6 |
+| 2 | VICE-PRESIDENTE | FEDERAL | 2 | 1 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=21017 |
+| `HH_GERACAO` | 19:30:36=21017 |
+| `ANO_ELEICAO` | 2026=21017 |
+| `CD_TIPO_ELEICAO` | 2=21017 |
+| `NM_TIPO_ELEICAO` | ELEIÇÃO ORDINÁRIA=21017 |
+| `NR_TURNO` | 1=20989; 2=28 |
+| `CD_ELEICAO` | 6259=20961; 6257=28; 6260=24; 6258=4 |
+| `DS_ELEICAO` | Eleições Gerais Estaduais 2026=20985; Eleição Geral Federal 2026=32 |
+| `DT_ELEICAO` | 04/10/2026=20989; 25/10/2026=28 |
+| `TP_ABRANGENCIA` | ESTADUAL=20985; FEDERAL=32 |
+| `SG_UF` | SP=2630; RJ=2055; MG=1832; BA=1224; PR=1090; RS=1054; PE=961; GO=906; PA=741; CE=714; SC=700; DF=672; MA=619; ES=595; AM=479; MT=455; PB=450; RO=438; MS=425; RR=413; SE=411; PI=402; AC=392; TO=372; RN=334; AP=322; AL=299; BR=32 |
+| `SG_UE` | SP=2630; RJ=2055; MG=1832; BA=1224; PR=1090; RS=1054; PE=961; GO=906; PA=741; CE=714; SC=700; DF=672; MA=619; ES=595; AM=479; MT=455; PB=450; RO=438; MS=425; RR=413; SE=411; PI=402; AC=392; TO=372; RN=334; AP=322; AL=299; BR=32 |
+| `NM_UE` | SÃO PAULO=2630; RIO DE JANEIRO=2055; MINAS GERAIS=1832; BAHIA=1224; PARANÁ=1090; RIO GRANDE DO SUL=1054; PERNAMBUCO=961; GOIÁS=906; PARÁ=741; CEARÁ=714; SANTA CATARINA=700; DISTRITO FEDERAL=672; MARANHÃO=619; ESPÍRITO SANTO=595; AMAZONAS=479; MATO GROSSO=455; PARAÍBA=450; RONDÔNIA=438; MATO GROSSO DO SUL=425; RORAIMA=413; SERGIPE=411; PIAUÍ=402; ACRE=392; TOCANTINS=372; RIO GRANDE DO NORTE=334; AMAPÁ=322; ALAGOAS=299; BRASIL=32 |
+| `CD_CARGO` | 7=11295; 6=7803; 8=433; 10=350; 9=349; 5=319; 4=223; 3=213; 1=16; 2=16 |
+| `DS_CARGO` | DEPUTADO ESTADUAL=11295; DEPUTADO FEDERAL=7803; DEPUTADO DISTRITAL=433; 2º SUPLENTE=350; 1º SUPLENTE=349; SENADOR=319; VICE-GOVERNADOR=223; GOVERNADOR=213; PRESIDENTE=16; VICE-PRESIDENTE=16 |
+| `SQ_CANDIDATO` | 20989 valores distintos |
+| `NR_CANDIDATO` | 5584 valores distintos |
+| `NM_CANDIDATO` | 20845 valores distintos |
+| `NM_URNA_CANDIDATO` | 20458 valores distintos |
+| `NM_SOCIAL_CANDIDATO` | 57 valores distintos |
+| `NR_CPF_CANDIDATO` | 20876 valores distintos |
+| `DS_EMAIL` | NÃO DIVULGÁVEL=21017 |
+| `CD_SITUACAO_CANDIDATURA` | -3=21017 |
+| `DS_SITUACAO_CANDIDATURA` | #NE=21017 |
+| `TP_AGREMIACAO` | PARTIDO ISOLADO=14125; FEDERAÇÃO=6292; COLIGAÇÃO=600 |
+| `NR_PARTIDO` | 22=1652; 15=1424; 10=1314; 30=1309; 20=1237; 55=1136; 12=1126; 13=1106; 45=1095; 70=980; 40=967; 44=848; 50=799; 27=775; 11=723; 33=581; 14=547; 77=539; 25=502; 36=475; 35=467; 18=355; 43=237; 80=191; 23=158; 65=155; 29=151; 16=130; 21=24; 28=14 |
+| `SG_PARTIDO` | PL=1652; MDB=1424; REPUBLICANOS=1314; NOVO=1309; PODE=1237; PSD=1136; PDT=1126; PT=1106; PSDB=1095; AVANTE=980; PSB=967; UNIÃO=848; PSOL=799; DC=775; PP=723; MOBILIZA=581; MISSÃO=547; SOLIDARIEDADE=539; PRD=502; AGIR=475; DEMOCRATA=467; REDE=355; PV=237; UP=191; CIDADANIA=158; PCDOB=155; PCO=151; PSTU=130; PCB=24; PRTB=14 |
+| `NM_PARTIDO` | PARTIDO LIBERAL=1652; MOVIMENTO DEMOCRÁTICO BRASILEIRO=1424; REPUBLICANOS=1314; PARTIDO NOVO=1309; PODEMOS=1237; PARTIDO SOCIAL DEMOCRÁTICO=1136; PARTIDO DEMOCRÁTICO TRABALHISTA=1126; PARTIDO DOS TRABALHADORES=1106; PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA=1095; AVANTE=980; PARTIDO SOCIALISTA BRASILEIRO=967; UNIÃO BRASIL=848; PARTIDO SOCIALISMO E LIBERDADE=799; DEMOCRACIA CRISTÃ=775; PROGRESSISTAS=723; MOBILIZAÇÃO NACIONAL=581; PARTIDO MISSÃO=547; SOLIDARIEDADE=539; PARTIDO RENOVACAO DEMOCRATICA=502; AGIR=475; DEMOCRATA=467; REDE SUSTENTABILIDADE=355; PARTIDO VERDE=237; UNIDADE POPULAR=191; CIDADANIA=158; PARTIDO COMUNISTA DO BRASIL=155; PARTIDO DA CAUSA OPERÁRIA=151; PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO=130; PARTIDO COMUNISTA BRASILEIRO=24; PARTIDO RENOVADOR TRABALHISTA BRASILEIRO=14 |
+| `NR_FEDERACAO` | -1=14500; 104=1571; 101=1498; 100=1253; 102=1154; 103=1041 |
+| `NM_FEDERACAO` | #NULO=14500; FEDERAÇÃO UNIÃO PROGRESSISTA=1571; FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL=1498; FEDERAÇÃO PSDB CIDADANIA=1253; FEDERAÇÃO PSOL REDE=1154; FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA=1041 |
+| `SG_FEDERACAO` | #NULO=14500; 44-UNIÃO/11-PP=1571; 13-PT/65-PC do B/43-PV=1498; 45-PSDB/23-CIDADANIA=1253; 50-PSOL/18-REDE=1154; 25-PRD/77-SOLIDARIEDADE=1041 |
+| `DS_COMPOSICAO_FEDERACAO` | #NULO=14500; 44-UNIÃO/11-PP=1571; 13-PT/65-PC do B/43-PV=1498; 45-PSDB/23-CIDADANIA=1253; 50-PSOL/18-REDE=1154; 25-PRD/77-SOLIDARIEDADE=1041 |
+| `SQ_COLIGACAO` | 1303 valores distintos |
+| `NM_COLIGACAO` | 98 valores distintos |
+| `DS_COMPOSICAO_COLIGACAO` | 126 valores distintos |
+| `SG_UF_NASCIMENTO` | SP=2552; RJ=2184; MG=2061; BA=1408; PR=1265; RS=1167; PE=1090; CE=854; PA=851; GO=825; MA=805; SC=572; ES=529; PB=517; PI=484; AM=477; DF=414; MS=376; AC=355; SE=353; RN=336; AL=327; MT=316; TO=249; RO=228; AP=201; RR=182; ZZ=36; Não divulgável=3 |
+| `DT_NASCIMENTO` | 11812 valores distintos |
+| `NR_TITULO_ELEITORAL_CANDIDATO` | 20876 valores distintos |
+| `CD_GENERO` | 2=13638; 4=7376; -4=3 |
+| `DS_GENERO` | MASCULINO=13638; FEMININO=7376; NÃO DIVULGÁVEL=3 |
+| `CD_GRAU_INSTRUCAO` | 8=12343; 6=4509; 7=2216; 5=700; 3=619; 4=551; 2=76; -4=3 |
+| `DS_GRAU_INSTRUCAO` | SUPERIOR COMPLETO=12343; ENSINO MÉDIO COMPLETO=4509; SUPERIOR INCOMPLETO=2216; ENSINO MÉDIO INCOMPLETO=700; ENSINO FUNDAMENTAL INCOMPLETO=619; ENSINO FUNDAMENTAL COMPLETO=551; LÊ E ESCREVE=76; NÃO DIVULGÁVEL=3 |
+| `CD_ESTADO_CIVIL` | 3=10559; 1=7238; 9=2698; 5=326; 7=193; -4=3 |
+| `DS_ESTADO_CIVIL` | CASADO(A)=10559; SOLTEIRO(A)=7238; DIVORCIADO(A)=2698; VIÚVO(A)=326; SEPARADO(A) JUDICIALMENTE=193; NÃO DIVULGÁVEL=3 |
+| `CD_COR_RACA` | 01=10554; 03=7315; 02=2843; 05=195; 04=107; -4=3 |
+| `DS_COR_RACA` | BRANCA=10554; PARDA=7315; PRETA=2843; INDÍGENA=195; AMARELA=107; NÃO DIVULGÁVEL=3 |
+| `CD_OCUPACAO` | 211 valores distintos |
+| `DS_OCUPACAO` | 211 valores distintos |
+| `CD_SIT_TOT_TURNO` | 5=11137; 4=6993; 2=1287; -1=1069; 3=285; 1=218; 6=28 |
+| `DS_SIT_TOT_TURNO` | SUPLENTE=11137; NÃO ELEITO=6993; ELEITO POR QP=1287; #NULO=1069; ELEITO POR MÉDIA=285; ELEITO=218; 2º TURNO=28 |
+
+## consulta_vagas — Vagas
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_vagas/consulta_vagas_2026.zip
+- Membro lido: `consulta_vagas_2026_BRASIL.csv`
+- Linhas: 191
+- Geração informada pela fonte: [('27/10/2026', '19:31:25', 191)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 191, 'soma_demais': 191, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| consulta_vagas_2026_AC.csv | 7 |
+| consulta_vagas_2026_AL.csv | 7 |
+| consulta_vagas_2026_AM.csv | 7 |
+| consulta_vagas_2026_AP.csv | 7 |
+| consulta_vagas_2026_BA.csv | 7 |
+| consulta_vagas_2026_BR.csv | 2 |
+| consulta_vagas_2026_BRASIL.csv | 191 |
+| consulta_vagas_2026_CE.csv | 7 |
+| consulta_vagas_2026_DF.csv | 7 |
+| consulta_vagas_2026_ES.csv | 7 |
+| consulta_vagas_2026_GO.csv | 7 |
+| consulta_vagas_2026_MA.csv | 7 |
+| consulta_vagas_2026_MG.csv | 7 |
+| consulta_vagas_2026_MS.csv | 7 |
+| consulta_vagas_2026_MT.csv | 7 |
+| consulta_vagas_2026_PA.csv | 7 |
+| consulta_vagas_2026_PB.csv | 7 |
+| consulta_vagas_2026_PE.csv | 7 |
+| consulta_vagas_2026_PI.csv | 7 |
+| consulta_vagas_2026_PR.csv | 7 |
+| consulta_vagas_2026_RJ.csv | 7 |
+| consulta_vagas_2026_RN.csv | 7 |
+| consulta_vagas_2026_RO.csv | 7 |
+| consulta_vagas_2026_RR.csv | 7 |
+| consulta_vagas_2026_RS.csv | 7 |
+| consulta_vagas_2026_SC.csv | 7 |
+| consulta_vagas_2026_SE.csv | 7 |
+| consulta_vagas_2026_SP.csv | 7 |
+| consulta_vagas_2026_TO.csv | 7 |
+
+</details>
+
+**Distribuição**
+
+| DS_CARGO | linhas | n_uf |
+|---|---|---|
+| 1. Suplente | 27 | 27 |
+| 2. Suplente | 27 | 27 |
+| Deputado Distrital | 1 | 1 |
+| Deputado Estadual | 26 | 26 |
+| Deputado Federal | 27 | 27 |
+| Governador | 27 | 27 |
+| Presidente | 1 | 1 |
+| Senador | 27 | 27 |
+| Vice-governador | 27 | 27 |
+| Vice-presidente | 1 | 1 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=191 |
+| `HH_GERACAO` | 19:31:25=191 |
+| `ANO_ELEICAO` | 2026=191 |
+| `CD_TIPO_ELEICAO` | 2=191 |
+| `NM_TIPO_ELEICAO` | Eleição Ordinária=191 |
+| `CD_ELEICAO` | 6259=189; 6257=2 |
+| `DS_ELEICAO` | Eleições Gerais Estaduais 2026=189; Eleição Geral Federal 2026=2 |
+| `DT_ELEICAO` | 04/10/2026=191 |
+| `DT_POSSE` | 02/05/2027=127; 06/01/2027=54; 01/05/2027=6; 05/01/2027=2; 05/04/2027=1; 03/05/2027=1 |
+| `SG_UF` | TO=7; RO=7; ES=7; PB=7; PA=7; AL=7; DF=7; BA=7; PI=7; PR=7; RJ=7; RN=7; SE=7; MA=7; MG=7; PE=7; AC=7; GO=7; RS=7; SC=7; AM=7; MS=7; RR=7; MT=7; SP=7; CE=7; AP=7; BR=2 |
+| `SG_UE` | BA=7; AM=7; PB=7; AL=7; MT=7; SP=7; SC=7; ES=7; DF=7; PE=7; PA=7; PR=7; AC=7; GO=7; RS=7; MA=7; MG=7; CE=7; RO=7; RR=7; AP=7; PI=7; MS=7; RJ=7; RN=7; SE=7; TO=7; BR=2 |
+| `NM_UE` | PARÁ=7; RONDÔNIA=7; DISTRITO FEDERAL=7; SÃO PAULO=7; BAHIA=7; CEARÁ=7; PIAUÍ=7; ACRE=7; AMAZONAS=7; MARANHÃO=7; MATO GROSSO=7; MATO GROSSO DO SUL=7; PARANÁ=7; RIO GRANDE DO SUL=7; AMAPÁ=7; ESPÍRITO SANTO=7; RIO DE JANEIRO=7; SERGIPE=7; ALAGOAS=7; GOIÁS=7; SANTA CATARINA=7; TOCANTINS=7; RORAIMA=7; MINAS GERAIS=7; PARAÍBA=7; PERNAMBUCO=7; RIO GRANDE DO NORTE=7; BRASIL=2 |
+| `CD_CARGO` | 5=27; 9=27; 6=27; 10=27; 3=27; 4=27; 7=26; 2=1; 8=1; 1=1 |
+| `DS_CARGO` | 1. Suplente=27; Senador=27; 2. Suplente=27; Governador=27; Deputado Federal=27; Vice-governador=27; Deputado Estadual=26; Deputado Distrital=1; Presidente=1; Vice-presidente=1 |
+| `QT_VAGA` | 2=81; 1=56; 24=11; 8=11; 30=3; 46=2; 17=2; 41=2; 70=2; 10=2; 31=1; 54=1; 40=1; 27=1; 18=1; 49=1; 25=1; 12=1; 9=1; 53=1; 63=1; 55=1; 16=1; 42=1; 77=1; 22=1; 94=1; 39=1; 36=1 |
+
+## consulta_coligacao — Coligações
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_coligacao/consulta_coligacao_2026.zip
+- Membro lido: `consulta_coligacao_2026_BRASIL.csv`
+- Linhas: 4,266
+- Geração informada pela fonte: [('27/10/2026', '19:30:54', 4266)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': True, 'linhas_brasil': 4266, 'soma_demais': 4266, 'brasil_e_soma': True}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| consulta_coligacao_2026_AC.csv | 149 |
+| consulta_coligacao_2026_AL.csv | 138 |
+| consulta_coligacao_2026_AM.csv | 142 |
+| consulta_coligacao_2026_AP.csv | 129 |
+| consulta_coligacao_2026_BA.csv | 169 |
+| consulta_coligacao_2026_BR.csv | 42 |
+| consulta_coligacao_2026_BRASIL.csv | 4266 |
+| consulta_coligacao_2026_CE.csv | 176 |
+| consulta_coligacao_2026_DF.csv | 189 |
+| consulta_coligacao_2026_ES.csv | 148 |
+| consulta_coligacao_2026_GO.csv | 154 |
+| consulta_coligacao_2026_MA.csv | 156 |
+| consulta_coligacao_2026_MG.csv | 170 |
+| consulta_coligacao_2026_MS.csv | 155 |
+| consulta_coligacao_2026_MT.csv | 152 |
+| consulta_coligacao_2026_PA.csv | 163 |
+| consulta_coligacao_2026_PB.csv | 149 |
+| consulta_coligacao_2026_PE.csv | 167 |
+| consulta_coligacao_2026_PI.csv | 156 |
+| consulta_coligacao_2026_PR.csv | 167 |
+| consulta_coligacao_2026_RJ.csv | 177 |
+| consulta_coligacao_2026_RN.csv | 166 |
+| consulta_coligacao_2026_RO.csv | 137 |
+| consulta_coligacao_2026_RR.csv | 133 |
+| consulta_coligacao_2026_RS.csv | 167 |
+| consulta_coligacao_2026_SC.csv | 177 |
+| consulta_coligacao_2026_SE.csv | 118 |
+| consulta_coligacao_2026_SP.csv | 180 |
+| consulta_coligacao_2026_TO.csv | 140 |
+
+</details>
+
+**Distribuição**
+
+| NR_TURNO | DS_CARGO | linhas | n_uf |
+|---|---|---|---|
+| 1 | 1º SUPLENTE | 612 | 27 |
+| 1 | 2º SUPLENTE | 612 | 27 |
+| 1 | DEPUTADO DISTRITAL | 25 | 1 |
+| 1 | DEPUTADO ESTADUAL | 523 | 26 |
+| 1 | DEPUTADO FEDERAL | 624 | 27 |
+| 1 | GOVERNADOR | 608 | 27 |
+| 1 | PRESIDENTE | 21 | 1 |
+| 1 | SENADOR | 612 | 27 |
+| 1 | VICE-GOVERNADOR | 608 | 27 |
+| 1 | VICE-PRESIDENTE | 21 | 1 |
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 27/10/2026=4266 |
+| `HH_GERACAO` | 19:30:54=4266 |
+| `ANO_ELEICAO` | 2026=4266 |
+| `CD_TIPO_ELEICAO` | 2=4266 |
+| `NM_TIPO_ELEICAO` | ELEIÇÃO ORDINÁRIA=4266 |
+| `NR_TURNO` | 1=4266 |
+| `CD_ELEICAO` | 6259=4224; 6257=42 |
+| `DS_ELEICAO` | Eleições Gerais Estaduais 2026=4224; Eleição Geral Federal 2026=42 |
+| `DT_ELEICAO` | 04/10/2026=4266 |
+| `SG_UF` | DF=189; SP=180; RJ=177; SC=177; CE=176; MG=170; BA=169; RS=167; PE=167; PR=167; RN=166; PA=163; MA=156; PI=156; MS=155; GO=154; MT=152; PB=149; AC=149; ES=148; AM=142; TO=140; AL=138; RO=137; RR=133; AP=129; SE=118; BR=42 |
+| `SG_UE` | DF=189; SP=180; SC=177; RJ=177; CE=176; MG=170; BA=169; PR=167; RS=167; PE=167; RN=166; PA=163; MA=156; PI=156; MS=155; GO=154; MT=152; PB=149; AC=149; ES=148; AM=142; TO=140; AL=138; RO=137; RR=133; AP=129; SE=118; BR=42 |
+| `NM_UE` | DISTRITO FEDERAL=189; SÃO PAULO=180; SANTA CATARINA=177; RIO DE JANEIRO=177; CEARÁ=176; MINAS GERAIS=170; BAHIA=169; RIO GRANDE DO SUL=167; PARANÁ=167; PERNAMBUCO=167; RIO GRANDE DO NORTE=166; PARÁ=163; PIAUÍ=156; MARANHÃO=156; MATO GROSSO DO SUL=155; GOIÁS=154; MATO GROSSO=152; PARAÍBA=149; ACRE=149; ESPÍRITO SANTO=148; AMAZONAS=142; TOCANTINS=140; ALAGOAS=138; RONDÔNIA=137; RORAIMA=133; AMAPÁ=129; SERGIPE=118; BRASIL=42 |
+| `CD_CARGO` | 6=624; 9=612; 5=612; 10=612; 3=608; 4=608; 7=523; 8=25; 2=21; 1=21 |
+| `DS_CARGO` | DEPUTADO FEDERAL=624; 2º SUPLENTE=612; 1º SUPLENTE=612; SENADOR=612; GOVERNADOR=608; VICE-GOVERNADOR=608; DEPUTADO ESTADUAL=523; DEPUTADO DISTRITAL=25; PRESIDENTE=21; VICE-PRESIDENTE=21 |
+| `TP_AGREMIACAO` | COLIGAÇÃO=2249; PARTIDO ISOLADO=1230; FEDERAÇÃO=787 |
+| `NR_PARTIDO` | 43=191; 65=191; 13=191; 22=188; 11=182; 44=182; 15=178; 55=178; 10=175; 12=173; 20=167; 18=166; 50=166; 30=164; 25=159; 77=159; 40=158; 23=156; 45=156; 27=155; 70=155; 80=120; 29=99; 35=95; 36=94; 16=86; 33=74; 14=73; 21=23; 28=12 |
+| `SG_PARTIDO` | PCDOB=191; PT=191; PV=191; PL=188; UNIÃO=182; PP=182; MDB=178; PSD=178; REPUBLICANOS=175; PDT=173; PODE=167; PSOL=166; REDE=166; NOVO=164; PRD=159; SOLIDARIEDADE=159; PSB=158; PSDB=156; CIDADANIA=156; AVANTE=155; DC=155; UP=120; PCO=99; DEMOCRATA=95; AGIR=94; PSTU=86; MOBILIZA=74; MISSÃO=73; PCB=23; PRTB=12 |
+| `NM_PARTIDO` | PARTIDO VERDE=191; PARTIDO COMUNISTA DO BRASIL=191; PARTIDO DOS TRABALHADORES=191; PARTIDO LIBERAL=188; UNIÃO BRASIL=182; PROGRESSISTAS=182; MOVIMENTO DEMOCRÁTICO BRASILEIRO=178; PARTIDO SOCIAL DEMOCRÁTICO=178; REPUBLICANOS=175; PARTIDO DEMOCRÁTICO TRABALHISTA=173; PODEMOS=167; REDE SUSTENTABILIDADE=166; PARTIDO SOCIALISMO E LIBERDADE=166; PARTIDO NOVO=164; SOLIDARIEDADE=159; PARTIDO RENOVACAO DEMOCRATICA=159; PARTIDO SOCIALISTA BRASILEIRO=158; PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA=156; CIDADANIA=156; DEMOCRACIA CRISTÃ=155; AVANTE=155; UNIDADE POPULAR=120; PARTIDO DA CAUSA OPERÁRIA=99; DEMOCRATA=95; AGIR=94; PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO=86; MOBILIZAÇÃO NACIONAL=74; PARTIDO MISSÃO=73; PARTIDO COMUNISTA BRASILEIRO=23; PARTIDO RENOVADOR TRABALHISTA BRASILEIRO=12 |
+| `NR_FEDERACAO` | -1=2367; 101=573; 104=364; 102=332; 103=318; 100=312 |
+| `NM_FEDERACAO` | #NULO=2367; FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL=573; FEDERAÇÃO UNIÃO PROGRESSISTA=364; FEDERAÇÃO PSOL REDE=332; FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA=318; FEDERAÇÃO PSDB CIDADANIA=312 |
+| `SG_FEDERACAO` | #NULO=2367; 13-PT/65-PC do B/43-PV=573; 44-UNIÃO/11-PP=364; 50-PSOL/18-REDE=332; 25-PRD/77-SOLIDARIEDADE=318; 45-PSDB/23-CIDADANIA=312 |
+| `DS_COMPOSICAO_FEDERACAO` | #NULO=2367; 13-PT/65-PC do B/43-PV=573; 44-UNIÃO/11-PP=364; 50-PSOL/18-REDE=332; 25-PRD/77-SOLIDARIEDADE=318; 45-PSDB/23-CIDADANIA=312 |
+| `SQ_COLIGACAO` | 1306 valores distintos |
+| `NM_COLIGACAO` | 97 valores distintos |
+| `DS_COMPOSICAO_COLIGACAO` | 126 valores distintos |
+| `CD_SITUACAO_LEGENDA` | D=4045; IN=97; DR=73; IR=42; IV=9 |
+| `DS_SITUACAO` | DEFERIDO=4045; INDEFERIDO=97; DEFERIDO COM RECURSO=73; INDEFERIDO COM RECURSO=42; INVALIDADO=9 |
+| `NM_TIPO_DESTINACAO_VOTOS` | #NE=2900; Válido (legenda)=1135; Válido=184; Anulado sub judice=24; Nulo técnico=13; Anulado=10 |
+
+## municipio_tse_ibge — Códigos oficiais de UF e municípios segundo o TSE e o IBGE
+
+- URL: https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip
+- Membro lido: `municipio_tse_ibge.csv`
+- Linhas: 5,571
+- Geração informada pela fonte: [('25/10/2026', '09:00:09', 5571)]
+- `_BRASIL` = soma dos demais recortes: {'tem_brasil': False, 'linhas_brasil': None, 'soma_demais': None, 'brasil_e_soma': None}
+
+<details><summary>Membros do ZIP (linhas de dados)</summary>
+
+| membro | linhas |
+|---|---|
+| municipio_tse_ibge.csv | 5571 |
+
+</details>
+
+**Colunas**
+
+| coluna | valores |
+|---|---|
+| `DT_GERACAO` | 25/10/2026=5571 |
+| `HH_GERACAO` | 09:00:09=5571 |
+| `CD_UF_TSE` | 2=853; 1=645; 4=497; 5=417; 6=399; 9=295; 10=246; 15=224; 12=223; 11=217; 8=185; 7=184; 16=167; 13=144; 18=142; 27=139; 17=102; 3=92; 19=79; 14=78; 21=75; 22=62; 23=52; 24=22; 25=16; 26=15; 20=1 |
+| `CD_UF_IBGE` | 31=853; 35=645; 43=497; 29=417; 41=399; 42=295; 52=246; 22=224; 25=223; 21=217; 26=185; 23=184; 24=167; 15=144; 51=142; 17=139; 27=102; 33=92; 50=79; 32=78; 28=75; 13=62; 11=52; 12=22; 16=16; 14=15; 53=1 |
+| `SG_UF` | MG=853; SP=645; RS=497; BA=417; PR=399; SC=295; GO=246; PI=224; PB=223; MA=217; PE=185; CE=184; RN=167; PA=144; MT=142; TO=139; AL=102; RJ=92; MS=79; ES=78; SE=75; AM=62; RO=52; AC=22; AP=16; RR=15; DF=1 |
+| `NM_UF` | Minas Gerais=853; São Paulo=645; Rio Grande Do Sul=497; Bahia=417; Paraná=399; Santa Catarina=295; Goiás=246; Piauí=224; Paraíba=223; Maranhão=217; Pernambuco=185; Ceará=184; Rio Grande Do Norte=167; Pará=144; Mato Grosso=142; Tocantins=139; Alagoas=102; Rio De Janeiro=92; Mato Grosso Do Sul=79; Espírito Santo=78; Sergipe=75; Amazonas=62; Rondônia=52; Acre=22; Amapá=16; Roraima=15; Distrito Federal=1 |
+| `CD_MUNICIPIO_TSE` | 5571 valores distintos |
+| `NM_MUNICIPIO_TSE` | 5297 valores distintos |
+| `CD_MUNICIPIO_IBGE` | 5571 valores distintos |
+| `NM_MUNICIPIO_IBGE` | 5298 valores distintos |
+

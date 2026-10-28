@@ -1,0 +1,26 @@
+# Cores fixas definidas pelo USUÁRIO do painel (não presumidas pelo código).
+#
+# Prioridade: cor do CANDIDATO > cor do PARTIDO > paleta validada automática.
+#
+# [candidatos.claro] / [candidatos.escuro]
+#   chave = "<Cargo>:<número na urna>[:<UF>]"  (UF só para cargos estaduais)
+#   ex.: "Presidente:13" = "#e34948"   ·   "Governador:10:ES" = "#1d6fb8"
+#
+# [claro] / [escuro]  →  chave = sigla do partido (SG_PARTIDO do TSE)
+#
+# Se duas cores fixas forem indistinguíveis (visão normal ou daltonismo), a segunda
+# é substituída por uma cor da paleta e o painel exibe um aviso.
+# Ao alterar, valide o conjunto (ver docs/identidade_visual.md).
+
+[claro]
+PT = "#e34948"
+
+[escuro]
+PT = "#e66767"
+
+[candidatos.claro]
+# Preencha com as cores de campanha, por exemplo:
+# "Presidente:13" = "#e34948"
+# "Presidente:22" = "#2a78d6"
+
+[candidatos.escuro]

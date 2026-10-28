@@ -1,0 +1,28 @@
+# Identidade visual do painel. As cores de marca (marinho + dourado) são
+# separadas das cores de dados (src/visualizacoes/cores.py) e não remetem a partidos.
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = true
+
+[theme]
+base = "light"
+primaryColor = "#1d3557"
+backgroundColor = "#eef1f5"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#14213d"
+font = "sans serif"
+baseRadius = "0.6rem"
+
+[theme.sidebar]
+backgroundColor = "#14213d"
+secondaryBackgroundColor = "#1f3354"
+textColor = "#e8edf3"
+primaryColor = "#e0b84c"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+# Serve ./static em /app/static: as malhas GeoJSON vão ao navegador uma vez
+# (com cache HTTP) em vez de embutidas em cada figura a cada interação.
+enableStaticServing = true

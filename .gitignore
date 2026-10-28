@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/processed/
+data/geo/
+data/*.log
+data/manifesto.json
+*.parcial
+*.tmp.parquet
+static/geo/
+.claude/
