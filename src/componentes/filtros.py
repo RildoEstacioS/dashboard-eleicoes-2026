@@ -140,9 +140,9 @@ def barra_lateral() -> Contexto:
     ap_box = sb.expander("Aparência")
     paleta = ap_box.radio("Paleta de liderança", ["padrao", "daltonismo"], key="f_paleta",
                       format_func={"padrao": "Padrão", "daltonismo": "Alternativa (Okabe-Ito)"}.get,
-                      help="Padrão: respeita as cores de partido configuradas (ex.: PL verde, PT vermelho), "
-                           "que podem se confundir para daltônicos. Alternativa: troca cores fixas que se "
-                           "confundam. No mapa escuro, usa-se a padrão.")
+                      help="Padrão: respeita as cores de partido configuradas, mesmo que se confundam para "
+                           "daltônicos. Alternativa: troca cores fixas que se confundam. No mapa escuro, "
+                           "usa-se a padrão.")
     fundo = ap_box.radio("Fundo do mapa", ["claro", "escuro"], key="f_fundo", horizontal=True)
     if sb.button("Limpar filtros", use_container_width=True):
         limpar_filtros()

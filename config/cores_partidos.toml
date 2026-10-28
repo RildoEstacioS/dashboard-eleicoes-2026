@@ -14,13 +14,9 @@
 
 [claro]
 PT = "#e34948"
-# Verde da bandeira do Brasil. Para daltônicos (protan/deutan) ele se confunde com o
-# vermelho do PT; por isso, na paleta "Alternativa (daltonismo)", o painel o substitui.
-PL = "#009c3b"
 
 [escuro]
 PT = "#e66767"
-PL = "#009c3b"
 
 [candidatos.claro]
 # Preencha com as cores de campanha, por exemplo:
