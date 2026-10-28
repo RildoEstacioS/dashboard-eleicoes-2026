@@ -210,15 +210,18 @@ def atribuir_com_fixas(ordem_candidatos: list[str], paleta: str, modo: str,
 
     `fixa_de`: SQ_CANDIDATO → cor escolhida pelo usuário (candidato ou partido).
     Uma cor fixa indistinguível de outra já aceita é descartada (o candidato
-    volta para a paleta) e gera um aviso. Retorna (cores, avisos).
+    volta para a paleta) e gera um aviso. Na paleta padrão, "indistinguível" é só
+    visão normal (ΔE < 15): a escolha do usuário prevalece. Na paleta de
+    daltonismo vale também o critério protan/deutan. Retorna (cores, avisos).
     """
+    compativeis = distintas if paleta == "daltonismo" else (lambda a, b: delta_e(a, b) >= 15)
     aceitas: dict[str, str] = {}
     avisos = []
     for sq in ordem_candidatos:
         cor = fixa_de.get(sq)
         if cor is None:
             continue
-        conflito = next((o for o, c in aceitas.items() if not distintas(cor, c)), None)
+        conflito = next((o for o, c in aceitas.items() if not compativeis(cor, c)), None)
         if conflito is None:
             aceitas[sq] = cor
         else:

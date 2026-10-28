@@ -202,6 +202,7 @@ def mapa_cores(ctx) -> tuple[dict[str, str], str]:
     mapa, avisos = cores.atribuir_com_fixas(ordem, paleta, ctx.fundo, fixa_de)
     nomes = dict(zip(c1.SQ_CANDIDATO, c1.NM_URNA_CANDIDATO))
     for sq, conflito in avisos:
-        st.caption(f"⚠ A cor configurada para {nomes.get(sq)} é indistinguível da de {nomes.get(conflito)} "
-                   "(inclusive para daltonismo); usando outra cor da paleta. Ajuste config/cores_partidos.toml.")
+        motivo = "para daltonismo" if paleta == "daltonismo" else "visualmente"
+        st.caption(f"⚠ A cor configurada para {nomes.get(sq)} é indistinguível {motivo} da de {nomes.get(conflito)}; "
+                   "usando outra cor da paleta. Ajuste config/cores_partidos.toml.")
     return mapa, cores.OUTROS[ctx.fundo]

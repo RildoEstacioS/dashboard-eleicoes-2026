@@ -44,6 +44,17 @@ def test_cores_de_campanha_por_candidato_e_conflito():
     assert sem == cores.atribuir_lideranca(["c1", "c2"], "padrao", "claro")
 
 
+def test_cores_fixas_confundiveis_so_para_daltonismo():
+    # Verde × vermelho: distinto em visão normal, confundível em protan/deutan.
+    fixas = {"c1": "#e34948", "c2": "#009c3b"}
+    assert not cores.distintas("#e34948", "#009c3b")
+    padrao, avisos = cores.atribuir_com_fixas(["c1", "c2"], "padrao", "claro", fixas)
+    assert padrao == {"c1": "#e34948", "c2": "#009c3b"} and avisos == []   # escolha do usuário prevalece
+    dalt, avisos = cores.atribuir_com_fixas(["c1", "c2"], "daltonismo", "claro", fixas)
+    assert dalt["c2"] != "#009c3b" and avisos == [("c2", "c1")]
+    assert cores.distintas(dalt["c1"], dalt["c2"])
+
+
 def test_deputados_eleitos_por_partido_com_tons_e_nao_eleitos_neutros():
     cp = cores.cores_partidos_proporcional(["P1", "P2", "P3"], "claro", {"P2": "#e34948"})
     assert cp["P2"] == "#e34948" and cp["P1"] != cp["P3"]

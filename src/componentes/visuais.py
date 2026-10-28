@@ -19,6 +19,9 @@ CSS = """
 h1 {font-size: 1.35rem !important; padding: 0 !important; margin: 0 !important;}
 h2, h3 {font-size: 1.0rem !important; padding: 0.1rem 0 0.2rem !important; margin: 0 !important;}
 [data-testid="stVerticalBlock"] {gap: 0.45rem;}
+/* O Streamlit dá margin-bottom:-16px ao markdown (pensado para <p>); nos blocos HTML próprios
+   (cabeçalho, KPIs, legenda...) isso sobrepõe o elemento seguinte. */
+[data-testid="stMarkdownContainer"]:has(> div) {margin-bottom: 0 !important;}
 [data-testid="stCaptionContainer"] p {font-size: 0.75rem;}
 div[data-testid="stRadio"] > label, div[data-testid="stSelectbox"] > label {font-size: 0.75rem;}
 
@@ -31,7 +34,7 @@ div[data-testid="stRadio"] > label, div[data-testid="stSelectbox"] > label {font
 .chip {display:inline-block; padding:1px 9px; margin:0 4px 0 0; border-radius:10px; font-size:0.72rem;
        color:#e8edf3; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22)}
 
-.kpis {display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin:4px 0 6px}
+.kpis {display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin:4px 0 2px}
 .kpi {background:#ffffff; border-radius:10px; padding:9px 14px 8px; border-top:4px solid #1d3557;
       box-shadow:0 1px 3px rgba(20,33,61,.10), 0 1px 1px rgba(20,33,61,.06)}
 .kpi .r {font-size:0.7rem; color:#4a5a73; text-transform:uppercase; letter-spacing:.06em; font-weight:600}
