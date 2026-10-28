@@ -246,10 +246,14 @@ data/                       raw/ processed/ geo/ (fora do controle de versão)
 **Implementado (Etapa 7)**
 - Tooltip compacto no mapa nacional por município: figura 2,49 MB → 1,47 MB (−41%)
 - Enquadramento ignora ilhas oceânicas minúsculas (Trindade/ES, Fernando de Noronha/PE)
-- 51 testes unitários e 21 de validação com dados oficiais; medições em docs/desempenho.md
+- 52 testes unitários e 21 de validação com dados oficiais; medições em docs/desempenho.md
 - Checklist final: [docs/checklist_final.md](docs/checklist_final.md)
 
 **Pendente / expansões possíveis**
+- **Próxima melhoria: linha do tempo da apuração.** Mostrar a evolução da contagem na noite da
+  eleição (% de seções apuradas e % de cada candidato ao longo do tempo), reconstruída a partir dos
+  boletins de urna do TSE (`DT_BU_RECEBIDO`). A viabilidade já foi verificada:
+  [docs/ideias/linha_do_tempo_apuracao.md](docs/ideias/linha_do_tempo_apuracao.md)
 - Detalhamento por seção eleitoral (dados disponíveis no TSE, não incluídos)
 - Validação contra os PDFs oficiais das demais UFs (comando pronto: `validar <UF>`)
 - Prestação de contas, bens, pesquisas e perfil do eleitorado (fora do escopo do MVP)
